@@ -1,2 +1,0 @@
-criando batata.
-oiee
