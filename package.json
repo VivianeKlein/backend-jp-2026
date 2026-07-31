@@ -1,0 +1,24 @@
+{
+  "name": "backend-jp-2026",
+  "version": "0.0.1",
+  "description": "conteudos aprendidos no jovem programador.",
+  "homepage": "https://github.com/VivianeKlein/backend-jp-2026#readme",
+  "bugs": {
+    "url": "https://github.com/VivianeKlein/backend-jp-2026/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VivianeKlein/backend-jp-2026.git"
+  },
+  "license": "ISC",
+  "author": "Viviane Klein Etienne",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
