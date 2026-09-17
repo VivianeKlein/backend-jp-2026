@@ -66,6 +66,29 @@ app.post("/api/pesoideal", (req, res) => {
     res.send({ altura, sexo, pesoideal })
 })
 
+app.post("/api/somar", (req, res) => {
+    const { num1, num2 } = req.body
+    const soma = num1 + num2
+    res.send({ soma })
+})
+
+app.post("/api/subtrair", (req, res) => {
+    const { num1, num2 } = req.body
+    const subtracao = num1 - num2
+    res.send({ subtracao })
+})
+
+app.post("/api/multiplicar", (req, res) => {
+    const { num1, num2 } = req.body
+    const multiplicacao = num1 * num2
+    res.send({ multiplicacao })
+})
+
+app.post("/api/dividir", (req, res) => {
+    const { num1, num2 } = req.body
+    const divisao = num1 / num2
+    res.send({ divisao })
+})
 
 app.listen(3000, () => {
     console.log("Servidor em http://localhost:3000")

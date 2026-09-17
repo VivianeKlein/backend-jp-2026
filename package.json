@@ -15,7 +15,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch maisexercicios.js",
+    "dev": "node --watch exercicios.js",
     "test": "jest"
   },
   "dependencies": {
