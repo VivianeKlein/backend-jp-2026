@@ -1,16 +1,13 @@
-import express from 'express' // TYPE MODULE
-// const express = require("express") // TYPE COMMON JS
+import express from 'express' 
 
-// inicializando o express = new
-const app = express ()
+import router from './src/router/pessoa.js'
 
-// rota
-app.get("/api/somar", (req, res) => {
-    const num1 = Number(req.query.num1)
-    const num2 = Number(req.query.num2)
-    res.send({mensagem: num1 + num2})
-})
+const app = express();
+app.use(express.json()) 
+
+app.use("/api", router)
+
 
 app.listen(3000, () => {
-    console.log("Servidor rodando em http://localhost:3000")
+    console.log("Servidor rodando na porta 3000")
 })
