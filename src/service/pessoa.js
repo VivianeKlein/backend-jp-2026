@@ -2,8 +2,8 @@ import Pessoa from '../model/pessoa.js'
 
 class ServicePessoa {
     
-    Buscar() {
-        return Pessoa.Buscar()
+    async Buscar() {
+        return Pessoa.findAll()
     }
 
     BuscarUm(id) {

@@ -2,9 +2,9 @@ import ServicePessoa from '../service/pessoa.js'
 
 class ControllerPessoa {
 
-    Buscar(req, res) {
+    async Buscar(req, res) {
         try {
-            const nomes = ServicePessoa.Buscar()
+            const nomes = await ServicePessoa.Buscar()
             res.send({ nomes })
         } catch (error) {
             res.send({ message: error.message })
